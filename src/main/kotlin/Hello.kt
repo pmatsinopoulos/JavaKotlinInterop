@@ -8,4 +8,6 @@ fun main() {
     println(hitPoints.javaClass)
     println(hitPoints::class)
     println("String"::class)
+    adversary.greeting = "Foo Greeting"
+    println(adversary.utterGreeting())
 }
