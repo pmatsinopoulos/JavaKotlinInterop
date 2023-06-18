@@ -1,5 +1,7 @@
 @file:JvmName("Hello")
 
+import java.io.IOException
+
 fun main() {
     val adversary = JHava()
     println(adversary.utterGreeting())
@@ -25,6 +27,11 @@ fun makeProclamation() = "Greetings, beast!"
 @JvmOverloads
 fun handOverFood(leftHand: String = "berries", rightHand: String = "beef") {
     println("Mmmmmm.... you hand over some delicious $leftHand and $rightHand.")
+}
+
+@Throws(IOException::class)
+fun acceptApology() {
+    throw IOException()
 }
 
 class Spellbook {

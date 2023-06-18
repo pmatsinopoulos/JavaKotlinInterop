@@ -1,6 +1,8 @@
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.io.IOException;
+
 public class JHava {
     private int hitPoints = 52489112;
     private String greeting = "BLARGH";
@@ -48,5 +50,11 @@ public class JHava {
 
         System.out.println("Max Spell Count: " + Spellbook.MAX_SPELL_COUNT);
         Spellbook.getSpellbookGreeting();
+
+        try {
+            Hello.acceptApology();
+        } catch (IOException e) {
+            System.out.println("Caught!");
+        }
     }
 }
