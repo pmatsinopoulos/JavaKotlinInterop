@@ -33,6 +33,10 @@ public class JHava {
         Hello.handOverFood("pizza");
     }
 
+    public void extendHandInFriendship() throws Exception {
+        throw new Exception();
+    }
+
     public static void main(String[] args) {
         System.out.println(Hello.makeProclamation());
 

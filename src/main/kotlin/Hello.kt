@@ -13,6 +13,11 @@ fun main() {
     adversary.greeting = "Foo Greeting"
     println(adversary.utterGreeting())
     adversary.offerFood()
+    try {
+        adversary.extendHandInFriendship()
+    } catch (e: Exception) {
+        println("Begone, foul beast!")
+    }
 }
 
 fun makeProclamation() = "Greetings, beast!"
