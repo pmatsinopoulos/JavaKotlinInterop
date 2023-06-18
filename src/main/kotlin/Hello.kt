@@ -12,6 +12,12 @@ fun main() {
     println("String"::class)
     adversary.greeting = "Foo Greeting"
     println(adversary.utterGreeting())
+    adversary.offerFood()
 }
 
 fun makeProclamation() = "Greetings, beast!"
+
+@JvmOverloads
+fun handOverFood(leftHand: String = "berries", rightHand: String = "beef") {
+    println("Mmmmmm.... you hand over some delicious $leftHand and $rightHand.")
+}

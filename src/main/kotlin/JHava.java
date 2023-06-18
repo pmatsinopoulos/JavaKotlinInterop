@@ -29,6 +29,10 @@ public class JHava {
         return null;
     }
 
+    public void offerFood() {
+        Hello.handOverFood("pizza");
+    }
+
     public static void main(String[] args) {
         System.out.println(Hello.makeProclamation());
     }
