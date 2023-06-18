@@ -21,3 +21,8 @@ fun makeProclamation() = "Greetings, beast!"
 fun handOverFood(leftHand: String = "berries", rightHand: String = "beef") {
     println("Mmmmmm.... you hand over some delicious $leftHand and $rightHand.")
 }
+
+class Spellbook {
+    @JvmField
+    val spells = listOf("Magic Ms. L", "Lay on Hans")
+}

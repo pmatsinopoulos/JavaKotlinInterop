@@ -35,5 +35,11 @@ public class JHava {
 
     public static void main(String[] args) {
         System.out.println(Hello.makeProclamation());
+
+        System.out.println("Spells:");
+        Spellbook spellbook = new Spellbook();
+        for (String spell : spellbook.spells) {
+            System.out.println(spell);
+        }
     }
 }
