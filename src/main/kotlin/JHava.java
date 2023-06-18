@@ -30,6 +30,6 @@ public class JHava {
     }
 
     public static void main(String[] args) {
-        System.out.println(HelloKt.makeProclamation());
+        System.out.println(Hello.makeProclamation());
     }
 }

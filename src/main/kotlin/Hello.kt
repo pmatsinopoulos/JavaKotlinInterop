@@ -1,3 +1,5 @@
+@file:JvmName("Hello")
+
 fun main() {
     val adversary = JHava()
     println(adversary.utterGreeting())
