@@ -28,4 +28,8 @@ public class JHava {
     public String determineFriendshipLevel() {
         return null;
     }
+
+    public static void main(String[] args) {
+        System.out.println(HelloKt.makeProclamation());
+    }
 }
