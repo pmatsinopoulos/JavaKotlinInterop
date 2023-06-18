@@ -41,5 +41,7 @@ public class JHava {
         for (String spell : spellbook.spells) {
             System.out.println(spell);
         }
+
+        System.out.println("Max Spell Count: " + Spellbook.MAX_SPELL_COUNT);
     }
 }
