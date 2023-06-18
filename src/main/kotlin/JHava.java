@@ -1,5 +1,7 @@
+import kotlin.Unit;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import kotlin.jvm.functions.Function1;
 
 import java.io.IOException;
 
@@ -56,5 +58,8 @@ public class JHava {
         } catch (IOException e) {
             System.out.println("Caught!");
         }
+
+        Function1<String, Unit> translator = Hello.getTranslator();
+        translator.invoke("TRUCE");
     }
 }

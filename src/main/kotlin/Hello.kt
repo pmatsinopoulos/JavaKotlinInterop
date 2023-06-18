@@ -46,3 +46,7 @@ class Spellbook {
         fun getSpellbookGreeting() = println("I am the Great Grimoire!")
     }
 }
+
+val translator = { utterance: String ->
+    println(utterance.lowercase().capitalize())
+}
