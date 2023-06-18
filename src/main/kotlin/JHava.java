@@ -43,5 +43,6 @@ public class JHava {
         }
 
         System.out.println("Max Spell Count: " + Spellbook.MAX_SPELL_COUNT);
+        Spellbook.getSpellbookGreeting();
     }
 }
